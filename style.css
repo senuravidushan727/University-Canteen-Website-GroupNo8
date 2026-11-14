@@ -39,3 +39,98 @@ a {
 ul {
   list-style: none;
 }
+
+
+/* Navigation bar */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--black);               /* black navigation bar */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .25);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 10px 28px;
+  flex-wrap: wrap;
+}
+
+/* University logo – always the first item (far left corner) */
+.uni-logo {
+  order: -1;
+  display: flex;
+  align-items: center;
+  padding-right: 22px;
+  border-right: 2px solid rgba(255, 255, 255, .18);   /* soft divider on black */
+}
+
+.uni-logo img {
+  height: 52px;
+  width: auto;
+  display: block;
+  background: var(--white);     /* keeps the JPG's white background neat on black */
+  border-radius: 10px;
+  padding: 3px 6px;
+  transition: transform .3s;
+}
+
+.uni-logo:hover img {
+  transform: scale(1.07);
+}
+
+/* Brand name */
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.logo span {
+  color: var(--green);
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 28px;
+  margin-left: auto;
+}
+
+.nav-links a {
+  position: relative;
+  padding: 6px 0;
+  font-weight: 500;
+  color: var(--white);
+  transition: color .3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--green);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Cart button */
+.cart-btn {
+  background: var(--green);
+  color: var(--white);
+  padding: 9px 22px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
+  transition: background .3s, transform .3s;
+}
+
+.cart-btn:hover {
+  background: var(--green-dark);
+  transform: translateY(-3px);
+}
