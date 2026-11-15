@@ -410,6 +410,35 @@ header {
     font-size: 14px;
 }
 
+/* Food Categories */
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 35px 0;
+}
+
+.category {
+    border: 1px solid #dce8df;
+    background-color: white;
+    padding: 10px 23px;
+    border-radius: 25px;
+
+    color: #444;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category:hover,
+.category.active {
+    background-color: #176b45;
+    color: white;
+    border-color: #176b45;
+}
+
+
 
 
 
