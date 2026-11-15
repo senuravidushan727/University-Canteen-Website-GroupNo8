@@ -381,6 +381,35 @@ header {
     color: rgb(254, 161, 1);
 }
 
+/* Menu Section */
+.menu-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.section-heading {
+    text-align: center;
+}
+
+.subtitle {
+    color: #e99a20;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    color: #176b45;
+    margin: 10px 0;
+}
+
+.section-heading > p:last-child {
+    color: #777;
+    font-size: 14px;
+}
+
 
 
 
