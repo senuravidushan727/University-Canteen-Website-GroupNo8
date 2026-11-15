@@ -135,6 +135,73 @@ header {
   transform: translateY(-3px);
 }
 
+/*========================================================================================================================
+                                                       Home page 
+=========================================================================================================================*/
+
+/*Hero section*/
+.hero{
+    min-height: 520px;
+    background-image: url("./images/hero_section_image.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 8%;
+    color: white;
+}
+
+.hero_elements{
+    width: 48%;
+    text-align: center;
+}
+
+.hero_elements h1{
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero_elements p{
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+
+#uor{
+    color: rgb(254, 161, 1);
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.hero-btn{
+    display: inline-block;
+    background-color: white;
+    color: #35A96B;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.hero-btn:hover{
+    background-color: #35A96B;
+    color:white;
+}
+
+
+
+
+
+/*========================================================================================================================
+                                                      Footer of the page
+=========================================================================================================================*/
+
+
 /*  Footer */
 footer {
   margin-top: auto;
