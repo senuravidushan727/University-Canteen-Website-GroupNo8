@@ -135,6 +135,175 @@ header {
   transform: translateY(-3px);
 }
 
+/* Main Page Container */
+main .wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Page Heading */
+.page-h {
+  text-align: center;
+  padding: 48px 0 24px;
+}
+
+.page-h h1 {
+  font-size: 2.1rem;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.page-h p {
+  color: var(--grey);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-sec {
+  padding: 20px 0 48px;
+}
+
+/* Two-column grid where both cards stretch to the same height */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* Updated box background color & subtle green border */
+.box {
+  background: #F4FBF7;
+  border: 1px solid #C8E6D5;
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.box p {
+  line-height: 1.9;
+  font-size: .95rem;
+}
+
+/* Left card stacks text on top and stretches the inner box below */
+.info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Inner box centered both vertically and horizontally with mint green color */
+.map-box {
+  flex: 1;
+  min-height: 220px;
+  background: var(--green-light);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1.5px solid #A8DEC0;
+  padding: 20px;
+  display: flex;
+  align-items: center;       /* Centers text vertically */
+  justify-content: center;   /* Centers text horizontally */
+  text-align: center;        /* Centers multi-line text */
+}
+
+/* Makes all canteen names bold */
+.map-box p {
+  font-weight: 700;
+  color: var(--green-dark);
+  line-height: 2.1;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Contact Form */
+.contact label {
+  display: block;
+  font-weight: 500;
+  font-size: .92rem;
+  margin-bottom: 14px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 11px 14px;
+  background: var(--white);
+  border: 1px solid #C8E6D5;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: .92rem;
+  outline: none;
+  transition: border-color .3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: var(--green);
+}
+
+.btn {
+  background: var(--green);
+  color: var(--white);
+  border: none;
+  padding: 12px 26px;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: .95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .3s, transform .3s;
+}
+
+.btn:hover {
+  background: var(--green-dark);
+  transform: translateY(-2px);
+}
+
+/* FAQ Section */
+.faq-sec {
+  padding: 10px 0 60px;
+}
+
+.faq-sec .title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 22px;
+}
+
+.faq-sec details {
+  background: #F4FBF7;
+  border: 1px solid #C8E6D5;
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow);
+}
+
+.faq-sec summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-sec details p {
+  margin-top: 10px;
+  color: var(--grey);
+  font-size: .92rem;
+}
+
+
+
+
+
+
 /*========================================================================================================================
                                                        Home page 
 
