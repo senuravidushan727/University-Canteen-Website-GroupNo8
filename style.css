@@ -137,7 +137,6 @@ header {
 
 /*========================================================================================================================
                                                        Home page 
-=========================================================================================================================*/
 
 /*Hero section*/
 .hero{
@@ -403,7 +402,141 @@ header {
 
 /*========================================================================================================================
                                                       Footer of the page
-=========================================================================================================================*/
+
+
+/* CampusBites – About Page Stylesheet (Without Nav & Footer, White Background) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --g: #f2f7f4;
+  --dg: #f6faf8;
+  --lg: #DDF4E6;
+  --cream: #FFF4E8;
+  --w: #fff;
+  --k: #171717;
+  --grey: #777;
+  --sh: 0 8px 24px rgba(35, 122, 75, .12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, Arial, sans-serif;
+  color: var(--k);
+  background: #fff; /* Solid white background */
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrap {
+  max-width: 1180px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 48px 0;
+}
+
+h2.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Page Heading */
+.page-h {
+  text-align: center;
+  padding: 50px 0 10px;
+}
+
+.page-h h1 {
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+}
+
+.page-h p {
+  color: var(--grey);
+}
+
+/* Grids & Info Boxes */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.g3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.box {
+  background: var(--w);
+  border-radius: 22px;
+  padding: 26px;
+  box-shadow: var(--sh);
+  text-align: center;
+  transition: .3s;
+}
+
+.box:hover {
+  transform: translateY(-6px);
+}
+
+.box .ic {
+  font-size: 2.4rem;
+}
+
+.box h3 {
+  margin: 6px 0;
+}
+
+.box p {
+  color: var(--grey);
+  font-size: .9rem;
+}
+
+.note {
+  font-size: .8rem;
+  color: var(--grey);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .g3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid,
+  .g3 {
+    grid-template-columns: 1fr;
+  }
+  h2.title {
+    font-size: 1.5rem;
+  }
+}
+
+
+
 
 
 /*  Footer */
