@@ -268,6 +268,37 @@ main .wrap {
   transform: translateY(-2px);
 }
 
+/* FAQ Section */
+.faq-sec {
+  padding: 10px 0 60px;
+}
+
+.faq-sec .title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 22px;
+}
+
+.faq-sec details {
+  background: #F4FBF7;
+  border: 1px solid #C8E6D5;
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow);
+}
+
+.faq-sec summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-sec details p {
+  margin-top: 10px;
+  color: var(--grey);
+  font-size: .92rem;
+}
+
 
 
 
