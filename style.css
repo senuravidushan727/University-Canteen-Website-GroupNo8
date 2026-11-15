@@ -160,6 +160,46 @@ main .wrap {
   margin: 0 auto;
 }
 
+/* Contact Section */
+.contact-sec {
+  padding: 20px 0 48px;
+}
+
+/* Two-column grid where both cards stretch to the same height */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* Updated box background color & subtle green border */
+.box {
+  background: #F4FBF7;
+  border: 1px solid #C8E6D5;
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.box p {
+  line-height: 1.9;
+  font-size: .95rem;
+}
+
+/* Left card stacks text on top and stretches the inner box below */
+.info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+
+
+
+
+
 
 
 
