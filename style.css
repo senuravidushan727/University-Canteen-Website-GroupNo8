@@ -309,7 +309,7 @@ header {
 
 .food-card{
     background-color: beige;
-    border-radius: 14px;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     transition: 0.3s;
@@ -445,7 +445,7 @@ header {
     gap: 25px;
 }
 
-.food-card {
+.food-card2 {
     background-color: white;
     border-radius: 14px;
     overflow: hidden;
@@ -455,12 +455,12 @@ header {
     transition: 0.3s;
 }
 
-.food-card:hover {
+.food-card2:hover {
     transform: translateY(-7px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-.food-card img {
+.food-card2 img {
     width: 100%;
     height: 210px;
     object-fit: cover;
