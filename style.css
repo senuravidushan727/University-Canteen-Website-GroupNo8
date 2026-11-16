@@ -225,6 +225,7 @@ main .wrap {
 
 /* Contact Form */
 .contact label {
+  text-align: left;
   display: block;
   font-weight: 500;
   font-size: .92rem;
