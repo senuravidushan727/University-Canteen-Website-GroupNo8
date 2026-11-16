@@ -135,6 +135,175 @@ header {
   transform: translateY(-3px);
 }
 
+/* Main Page Container */
+main .wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Page Heading */
+.page-h {
+  text-align: center;
+  padding: 48px 0 24px;
+}
+
+.page-h h1 {
+  font-size: 2.1rem;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.page-h p {
+  color: var(--grey);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-sec {
+  padding: 20px 0 48px;
+}
+
+/* Two-column grid where both cards stretch to the same height */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* Updated box background color & subtle green border */
+.box {
+  background: #F4FBF7;
+  border: 1px solid #C8E6D5;
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.box p {
+  line-height: 1.9;
+  font-size: .95rem;
+}
+
+/* Left card stacks text on top and stretches the inner box below */
+.info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Inner box centered both vertically and horizontally with mint green color */
+.map-box {
+  flex: 1;
+  min-height: 220px;
+  background: var(--green-light);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1.5px solid #A8DEC0;
+  padding: 20px;
+  display: flex;
+  align-items: center;       /* Centers text vertically */
+  justify-content: center;   /* Centers text horizontally */
+  text-align: center;        /* Centers multi-line text */
+}
+
+/* Makes all canteen names bold */
+.map-box p {
+  font-weight: 700;
+  color: var(--green-dark);
+  line-height: 2.1;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Contact Form */
+.contact label {
+  display: block;
+  font-weight: 500;
+  font-size: .92rem;
+  margin-bottom: 14px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 11px 14px;
+  background: var(--white);
+  border: 1px solid #C8E6D5;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: .92rem;
+  outline: none;
+  transition: border-color .3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: var(--green);
+}
+
+.btn {
+  background: var(--green);
+  color: var(--white);
+  border: none;
+  padding: 12px 26px;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: .95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .3s, transform .3s;
+}
+
+.btn:hover {
+  background: var(--green-dark);
+  transform: translateY(-2px);
+}
+
+/* FAQ Section */
+.faq-sec {
+  padding: 10px 0 60px;
+}
+
+.faq-sec .title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 22px;
+}
+
+.faq-sec details {
+  background: #F4FBF7;
+  border: 1px solid #C8E6D5;
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow);
+}
+
+.faq-sec summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-sec details p {
+  margin-top: 10px;
+  color: var(--grey);
+  font-size: .92rem;
+}
+
+
+
+
+
+
 /*========================================================================================================================
                                                        Home page 
 
@@ -281,78 +450,70 @@ header {
 /*Menu details*/
 
 .food-menu{
-    padding: 75px 8%;
-    background-color: #FFF4E8;
+    padding: 65px 8%;
+    background-color: white;
 }
 
 .menu-heading{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .menu-heading h2{
-    font-size:34px;
+    font-size:32px;
     color: #35A96B;
     margin-bottom: 12px;
-    font-weight: 700;
 }
 
 .menu-heading p{
-    color: #777777;
+    color: rgb(0, 0, 0);
     font-size: 16px
 }
 
 .food-container {
     display: grid;
-    grid-template-columns: repeat(3,minmax(0,1fr));
-    gap: 30px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
 }
 
 .food-card{
-    background-color: #FFFFFF;
-    border-radius: 18px;
+    background-color: beige;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 18px rgba(35,122,75,0.10);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     transition: 0.3s;
-    border: 1px solid #DDF4E6;
 }
 
 
 .food-card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(35, 122, 75, 0.18);
+    transform: translateY(-5px);
 }
 
 .food-card img{
-    width: 100%;
-    height: 220px;
+    width: 75%;
+    height: 180px;
     object-fit: cover;
     display: block;
-    transition: transform 0.4s ease;
     margin: 20px auto 0;
 }
 
 
 .food-info{
-    padding: 24px;
+    padding: 25px 20px;
     text-align: center;
 }
 
 .food-info span{
     color:rgb(0, 0, 0);
     font-size: 14px;
-    font-weight: 600;
-    display: inline-block;
-    margin-bottom: 12px;
-    background-color: #DDF4E6;
-    color: #237A4B;
-    padding: 6px 15px;
-    border-radius: 20px;
+    font-weight: bold;
+    display: block;
     margin-bottom: 12px;
 }
 
 .food-info h3{
-    color: #237A4B;
+    color: rgb(254, 161, 1);
+    margin: 10px 0;
     margin-bottom: 12px;
     font-size: 20px;
 }
@@ -361,17 +522,12 @@ header {
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 15px;
-    color: #777777;
+    padding: 0 5px;
 }
 
 .food-info h4{
-    display: inline-block;
-    background-color: #35A96B;
-    color: white;
-    font-size: 18px;
-    padding: 8px 22px;
-    border-radius: 25px;
-    margin-top: 5px;
+    font-size: 19px;
+    padding: 8px 0;
 }
 
 .menu-link{
@@ -381,20 +537,17 @@ header {
 
 .menu-link a{
     display: inline-block;
-    background-color: #237A4B;
+    background-color: #35A96B;
     color:white;
-    padding: 13px 30px;
-    border-radius: 30px;
-    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 5px;
     text-decoration: none;
 
 }
 
 .menu-link a:hover{
-    background-color: rgb(254, 161, 1);
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(35, 122, 75, 0.2)
+    background-color: white;
+    color: rgb(254, 161, 1);
 }
 
 /* Menu Section */
